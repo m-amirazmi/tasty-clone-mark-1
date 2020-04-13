@@ -45,7 +45,7 @@ const useStyles = makeStyles((theme) => ({
       backgroundColor: fade(theme.palette.common.black, 0.1),
     },
     marginLeft: "20px",
-    width: "60%",
+    width: "100%",
     [theme.breakpoints.up("sm")]: {
       marginLeft: theme.spacing(1),
       width: "1000px",
