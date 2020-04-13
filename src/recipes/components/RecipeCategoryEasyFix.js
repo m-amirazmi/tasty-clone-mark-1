@@ -9,7 +9,7 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "space-around",
     overflow: "hidden",
     backgroundColor: theme.palette.background.paper,
-    marginBottom: "60px",
+    marginBottom: "0",
     "& ul li": {
       marginRight: "15px",
     },
