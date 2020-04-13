@@ -9,6 +9,7 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "space-around",
     overflow: "hidden",
     backgroundColor: theme.palette.background.paper,
+    marginBottom: "60px",
     "& ul li": {
       marginRight: "15px",
     },
@@ -39,13 +40,13 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const RecipeCategoryTrending = (props) => {
+const RecipeCategoryEasyFix = (props) => {
   const classes = useStyles();
 
   return (
     <div className={classes.containerCategoryList}>
       <div className={classes.categoryName}>
-        <h5>TRENDING</h5>
+        <h5>EASY FIX</h5>
       </div>
       <div className={classes.root}>
         <GridList className={classes.gridList} cols={2.5}>
@@ -65,4 +66,4 @@ const RecipeCategoryTrending = (props) => {
   );
 };
 
-export default RecipeCategoryTrending;
+export default RecipeCategoryEasyFix;

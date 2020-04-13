@@ -3,6 +3,7 @@ import RecipeList from "../components/RecipeList";
 import RecipeSearchBar from "../components/RecipeSearchBar";
 import RecipeFeatured from "../components/RecipeFeatured";
 import RecipeCategoryTrending from "../components/RecipeCategoryTrending";
+import RecipeCategoryEasyFix from "../components/RecipeCategoryEasyFix";
 
 const AllRecipes = (props) => {
   const RECIPES = [
@@ -38,6 +39,32 @@ const AllRecipes = (props) => {
       title: "Nasi Goreng Ikan",
     },
   ];
+  const RECIPES_2 = [
+    {
+      id: "r21",
+      image:
+        "https://images.says.com/uploads/story_source/source_image/401656/a77f.jpeg",
+      title: "Maggie Goreng Sempoi",
+    },
+    {
+      id: "r22",
+      image:
+        "https://images.says.com/uploads/story_source/source_image/401586/9678.jpg",
+      title: "Kari Ayam",
+    },
+    {
+      id: "r23",
+      image:
+        "https://images.says.com/uploads/story_source/source_image/401601/da47.jpg",
+      title: "Ikan Masak Singgang",
+    },
+    {
+      id: "r24",
+      image:
+        "https://images.says.com/uploads/story_source/source_image/401607/45d2.jpg",
+      title: "Ayam Goreng Kunyit",
+    },
+  ];
 
   return (
     <div className="">
@@ -45,20 +72,7 @@ const AllRecipes = (props) => {
       <RecipeFeatured />
       {/* <RecipeList items={RECIPES} />; */}
       <RecipeCategoryTrending items={RECIPES} />
-      <h1>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam
-        repellat harum aliquam tempora nemo eaque sint, vel minima, non
-        blanditiis repudiandae voluptatibus ad at alias, amet ducimus illo!
-        Ratione voluptatem a est! Voluptatibus dolorem voluptas itaque velit
-        voluptates labore ex asperiores corporis ea, corrupti fugit natus.
-        Obcaecati dolorem dolores ipsum dignissimos ea omnis deleniti aliquam
-        molestiae similique fugit neque, excepturi exercitationem dolorum amet
-        tempora accusantium reprehenderit illo. Non reiciendis, corporis harum
-        officiis maxime nihil, vitae quidem aperiam eveniet quos, voluptatum
-        quisquam? Officiis necessitatibus ipsam vitae nostrum recusandae, sunt,
-        molestias expedita harum, iusto totam nemo. Sapiente omnis officiis
-        voluptatum eligendi aliquam!
-      </h1>
+      <RecipeCategoryEasyFix items={RECIPES_2} />
     </div>
   );
 };
