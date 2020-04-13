@@ -4,6 +4,8 @@ import RecipeSearchBar from "../components/RecipeSearchBar";
 import RecipeFeatured from "../components/RecipeFeatured";
 import RecipeCategoryTrending from "../components/RecipeCategoryTrending";
 import RecipeCategoryEasyFix from "../components/RecipeCategoryEasyFix";
+import RecipeCategoryRecentUploads from "../components/RecipeCategoryRecentUploads";
+import RecipeAddYours from "../components/RecipeAddYours";
 
 const AllRecipes = (props) => {
   const RECIPES = [
@@ -73,6 +75,8 @@ const AllRecipes = (props) => {
       {/* <RecipeList items={RECIPES} />; */}
       <RecipeCategoryTrending items={RECIPES} />
       <RecipeCategoryEasyFix items={RECIPES_2} />
+      <RecipeCategoryRecentUploads items={RECIPES_2} />
+      <RecipeAddYours />
     </div>
   );
 };

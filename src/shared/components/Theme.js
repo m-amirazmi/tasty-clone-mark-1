@@ -14,7 +14,7 @@ export default createMuiTheme({
       background: `${appOrangePastel}`,
     },
     secondary: {
-      main: `${appBluePastel}`,
+      main: `${appOrangePastel}`,
     },
   },
 });
