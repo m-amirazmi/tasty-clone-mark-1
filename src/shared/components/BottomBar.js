@@ -5,20 +5,28 @@ import {
   BottomNavigation,
   BottomNavigationAction,
 } from "@material-ui/core";
-import PageviewOutlinedIcon from "@material-ui/icons/PageviewOutlined";
+import SearchOutlinedIcon from "@material-ui/icons/SearchOutlined";
 import LocalMallOutlinedIcon from "@material-ui/icons/LocalMallOutlined";
 import FavoriteBorderOutlinedIcon from "@material-ui/icons/FavoriteBorderOutlined";
 import { makeStyles } from "@material-ui/styles";
 
-const useStyles = makeStyles({
+const useStyles = makeStyles((theme) => ({
   root: {
     width: "100vw",
+    backgroundColor: theme.palette.primary.background,
   },
+  // navAction: {
+  //   color: "#fff",
+  // },
   appBar: {
     bottom: "0",
     top: "auto",
+    backgroundColor: theme.palette.primary.background,
   },
-});
+  label: {
+    color: "#e0e0e0",
+  },
+}));
 
 const BottomBar = () => {
   const classes = useStyles();
@@ -29,7 +37,7 @@ const BottomBar = () => {
   };
 
   return (
-    <AppBar position="fixed" color="#fff" className={classes.appBar}>
+    <AppBar position="fixed" className={classes.appBar}>
       <Toolbar>
         <BottomNavigation
           value={value}
@@ -38,14 +46,17 @@ const BottomBar = () => {
           className={classes.root}
         >
           <BottomNavigationAction
+            className={classes.label}
             label="Discover"
-            icon={<PageviewOutlinedIcon />}
+            icon={<SearchOutlinedIcon />}
           />
           <BottomNavigationAction
+            className={classes.label}
             label="My Bag"
             icon={<LocalMallOutlinedIcon />}
           />
           <BottomNavigationAction
+            className={classes.label}
             label="Favorites"
             icon={<FavoriteBorderOutlinedIcon />}
           />
