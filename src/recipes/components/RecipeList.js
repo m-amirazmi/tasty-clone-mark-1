@@ -1,5 +1,5 @@
 import React from "react";
-import { CssBaseline, Typography, Container } from "@material-ui/core";
+import { CssBaseline, Container } from "@material-ui/core";
 
 import RecipeItem from "./RecipeItem";
 

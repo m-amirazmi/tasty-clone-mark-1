@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import AllRecipes from "./recipes/pages/AllRecipes";
+import BottomBar from "./shared/components/BottomBar";
 
 const App = () => {
   return (
@@ -10,6 +11,7 @@ const App = () => {
           <AllRecipes />
         </Route>
       </Switch>
+      <BottomBar />
     </Router>
   );
 };
