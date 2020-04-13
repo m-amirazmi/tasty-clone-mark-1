@@ -22,7 +22,6 @@ const useStyles = makeStyles((theme) => ({
     left: "10vw",
     color: theme.palette.primary.main,
     fontSize: "1.5rem",
-    fontWeight: "bold",
   },
 }));
 
