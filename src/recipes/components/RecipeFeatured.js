@@ -11,7 +11,7 @@ const useStyles = makeStyles((theme) => ({
     "& img": {
       alignItems: "center",
       display: "block",
-      borderRadius: "2.5%",
+      // borderRadius: "2.5%",
       height: "100%",
       width: "100%",
     },
@@ -22,6 +22,7 @@ const useStyles = makeStyles((theme) => ({
     left: "10vw",
     color: theme.palette.primary.main,
     fontSize: "1.5rem",
+    fontWeight: "bold",
   },
 }));
 
