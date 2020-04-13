@@ -10,7 +10,7 @@ const App = () => {
     <ThemeProvider theme={theme}>
       <Router>
         <Switch>
-          <Route path="/">
+          <Route exact path="/">
             <AllRecipes />
           </Route>
         </Switch>

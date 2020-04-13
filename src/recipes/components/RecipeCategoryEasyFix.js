@@ -1,6 +1,7 @@
 import React from "react";
 import { GridList, GridListTile } from "@material-ui/core";
 import { makeStyles } from "@material-ui/styles";
+import { Link } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -52,11 +53,13 @@ const RecipeCategoryEasyFix = (props) => {
         <GridList className={classes.gridList} cols={2.5}>
           {props.items.map((recipe) => (
             <GridListTile key={recipe.id} className={classes.recipeImgBox}>
-              <img
-                className={classes.recipeImg}
-                src={recipe.image}
-                alt={recipe.title}
-              />
+              <Link to="/:id">
+                <img
+                  className={classes.recipeImg}
+                  src={recipe.image}
+                  alt={recipe.title}
+                />
+              </Link>
               <h5 className={classes.recipeTitle}>{recipe.title}</h5>
             </GridListTile>
           ))}

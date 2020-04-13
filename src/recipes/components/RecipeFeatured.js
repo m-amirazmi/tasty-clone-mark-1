@@ -1,5 +1,6 @@
 import React from "react";
 import { Paper, makeStyles } from "@material-ui/core";
+import { Link } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
   imgBox: {
@@ -29,15 +30,17 @@ const useStyles = makeStyles((theme) => ({
 const RecipeFeatured = () => {
   const classes = useStyles();
   return (
-    <Paper elevation={0} className={classes.imgBox}>
-      <img
-        alt="featured recipe"
-        src="https://1.bp.blogspot.com/-WWNInfbCMCs/XpGw3O48xVI/AAAAAAAAJjY/imep3aLvddoaGl-BujgOP3jBrhAWZSETwCLcBGAsYHQ/s640/IMG_1799.jpg"
-      />
-      <div className={classes.imgTitle}>
-        <p fontWeight="fontWeightBold"> Ayam Goreng Rendang</p>
-      </div>
-    </Paper>
+    <Link to="/featured">
+      <Paper elevation={0} className={classes.imgBox}>
+        <img
+          alt="featured recipe"
+          src="https://1.bp.blogspot.com/-WWNInfbCMCs/XpGw3O48xVI/AAAAAAAAJjY/imep3aLvddoaGl-BujgOP3jBrhAWZSETwCLcBGAsYHQ/s640/IMG_1799.jpg"
+        />
+        <div className={classes.imgTitle}>
+          <p fontWeight="fontWeightBold"> Ayam Goreng Rendang</p>
+        </div>
+      </Paper>
+    </Link>
   );
 };
 

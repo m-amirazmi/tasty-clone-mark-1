@@ -1,5 +1,6 @@
 import React from "react";
 import { Grid, makeStyles, Paper } from "@material-ui/core";
+import { Link } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
   categoryTitle: {
@@ -34,7 +35,9 @@ const RecipeCategoryRecentUploads = (props) => {
         {props.items.map((recipe) => (
           <Grid item xs={6}>
             <Paper elevation={0} className={classes.imgBox}>
-              <img src={recipe.image} alt={recipe.title} />
+              <Link to="/:id">
+                <img src={recipe.image} alt={recipe.title} />
+              </Link>
               <div className={classes.imgTitle}>
                 <h5>{recipe.title}</h5>
               </div>

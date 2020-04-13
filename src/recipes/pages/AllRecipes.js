@@ -6,6 +6,7 @@ import RecipeCategoryTrending from "../components/RecipeCategoryTrending";
 import RecipeCategoryEasyFix from "../components/RecipeCategoryEasyFix";
 import RecipeCategoryRecentUploads from "../components/RecipeCategoryRecentUploads";
 import RecipeAddYours from "../components/RecipeAddYours";
+import AppTitle from "../components/AppTitle";
 
 const AllRecipes = (props) => {
   const RECIPES = [
@@ -71,6 +72,7 @@ const AllRecipes = (props) => {
   return (
     <div className="">
       <RecipeSearchBar />
+      <AppTitle />
       <RecipeFeatured />
       {/* <RecipeList items={RECIPES} />; */}
       <RecipeCategoryTrending items={RECIPES} />
