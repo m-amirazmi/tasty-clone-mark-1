@@ -30,13 +30,6 @@ const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
   },
-  title: {
-    flexGrow: 1,
-    display: "none",
-    [theme.breakpoints.up("sm")]: {
-      display: "block",
-    },
-  },
   search: {
     position: "relative",
     borderRadius: theme.shape.borderRadius,
@@ -44,7 +37,7 @@ const useStyles = makeStyles((theme) => ({
     "&:hover": {
       backgroundColor: fade(theme.palette.common.black, 0.1),
     },
-    marginLeft: "20px",
+    marginLeft: "10px",
     width: "100%",
     [theme.breakpoints.up("sm")]: {
       marginLeft: theme.spacing(1),
@@ -91,9 +84,6 @@ const RecipeSearchBar = () => {
       <ElevationScroll>
         <AppBar color="#fff">
           <Toolbar>
-            <Typography noWrap variant="h6">
-              Tasty Clone
-            </Typography>
             <div className={classes.search}>
               <div className={classes.searchIcon}>
                 <SearchIcon />
