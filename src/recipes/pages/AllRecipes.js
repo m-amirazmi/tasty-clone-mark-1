@@ -1,6 +1,7 @@
 import React from "react";
 import RecipeList from "../components/RecipeList";
 import RecipeSearchBar from "../components/RecipeSearchBar";
+import RecipeFeatured from "../components/RecipeFeatured";
 
 const AllRecipes = (props) => {
   const RECIPES = [
@@ -22,6 +23,7 @@ const AllRecipes = (props) => {
   return (
     <div className="">
       <RecipeSearchBar />
+      <RecipeFeatured />
       <RecipeList items={RECIPES} />;
       <h1>
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi possimus
